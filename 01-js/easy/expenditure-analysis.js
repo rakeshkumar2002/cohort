@@ -14,7 +14,15 @@
 */
 
 function calculateTotalSpentByCategory(transactions) {
-  return [];
+  let output=[];
+
+  for(let i=0; i<transactions.length; i++){
+    let singleobj = transactions.map(obj => obj.category)
+    
+  }
+
+  const expenditure = transactions.map(obj => ({category: obj.category, totalSpent: obj.totalSpent}));
+  return expenditure;
 }
 
 module.exports = calculateTotalSpentByCategory;
